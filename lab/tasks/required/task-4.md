@@ -208,7 +208,13 @@ Use any of the following methods:
    usermod -aG sudo operator
    ```
 
-5. [Copy SSH authorized keys to the `operator` user](../../../wiki/vm-autochecker.md#copy-ssh-authorized-keys-to-a-user).
+5. Add the user to the `docker` group:
+
+   ```terminal
+   usermod -aG docker operator
+   ```
+
+6. [Copy SSH authorized keys to the `operator` user](../../../wiki/vm-autochecker.md#copy-ssh-authorized-keys-to-a-user).
 
    Replace `<username>` with `operator`.
 
